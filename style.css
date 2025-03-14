@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul li, a{
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
+img{
+    width: 100%;
+}
+.btn{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: green;
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    transition: all .3s ease-insd-out;
+    border-radius: 18px;
+}
+.btn:hover{
+    background-color: greenyellow;
+    color: green;
+
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: greenyellow;
+   
+}
+.header_container .container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+.header_container .header_logo h1{
+    color: green;
+    font-size: 36px;
+}
+.header_container .header_nav .header_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.header_container .header_nav .header_menu li a{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: green;
+    transition: all .3s ease-in-out;
+}
+
+.header_container .header_nav .header_menu li a:hover{
+    color: white;
+}
+/* CSS HOME */
+#home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+#home .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+}
+#home .home_image, #home .home_desc{
+    width: 50%;
+    height: 100%;
+    
+}
+#home .home_desc{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+#home .home_desc .home_title{
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+#home .home_desc .home_param{
+    font-size: 18px;
+    width: 80%;
+}
+/*About*/
+#about{
+    background-color:green;
+    padding: 24px 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+}
+#about .container .about_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+}
+#about .container .about_title h3, #services .container .services_main_header{
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: greenyellow;
+
+}
+#about .container .about_title span, #services .container .services_main_header span{
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: greenyellow;
+}
+#about .container .about_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+#about .container .about_container .about_info{
+    width: 60%;
+    display: flex;
+    flex-direction: column; 
+    gap: 18px;
+    text-align: justify;
+}
+#about .container .about_container .about_info .about_info_p{
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+#about .container .about_container .about_info .about_header_list{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 18px;
+}
+#about .container .about_container .about_info .about_header_list header{
+    font-size: 28px;
+    color: greenyellow;
+}
+#about .container .about_container .about_info .about_header_list .about_header_list_item{
+    color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+#about .container .about_container .about_info .about_header_list .about_header_list_item ol{
+    display: flex;
+    font-size: 18px;
+}
+#about .container .about_container .about_image{
+    width: 40%;
+}
+/*Services*/
+#services{
+    background-color: greenyellow;
+    padding: 24px 0;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#services .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#services .container .services_main_header{
+   color: green;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 6px;
+}
+#services .container .services_main_header span{
+    background-color: green;
+}
+#services .container .services_container{
+    display: flex;
+    margin-top: 48px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#services .container .services_container .services_section{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+#services .container .services_container .services_section .service_section_header{
+    font-size: 20px;
+    color: green;
+
+}
+#services .container .services_container .services_section p{
+    text-align: justify;
+    color: black;
+    margin-bottom: 18px;
+}
+#services .container .services_container .services_section .btn{
+    border: 2px solid transparent;
+    transition: all .3s ease-in-out;
+}
+#services .container .services_container .services_section .btn:hover{
+    border: 2px solid green;
+}
+/*contacts*/
+#contacts{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contacts .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+#contacts .container span{
+    display: inline;
+    width: 3px;
+    height: 180px;
+    background-color: green;
+}
+
+#contacts .container .contacts_header, 
+#contacts .container .contacts_form{
+    width: 50%;
+}
+#contacts .container .contacts_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 24px;
+}
+#contacts .container .contacts_header h2{
+    font-size: 42px;
+}
+#contacts .container .contacts_header p{
+    font-size: 18px;
+}
+#contacts .container .contacts_form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#contacts .container .contacts_form label{
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: green;
+
+}
+#contacts .container .contacts_form input{
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid green;
+    outline: none;
+    font-size: 24px;
+}
+#contacts .container .contacts_form .btn{
+cursor: pointer;
+}
+#contacts .container .contacts_form textarea{
+    width: 100%;
+    height: 250px;
+    border: 2px solid green;
+    outline: none;
+}
+#contacts .container .contacts_form .contacts_label{
+    display: flex;
+    flex-direction: column;
+  
+}
+#contacts .container .contacts_form .contacts_names{
+   display: flex;
+gap: 36px;
+}
+/*Footer*/
+.footer_container{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 24px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_container .container{
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+.footer_container .container .footer_header{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 50%;
+}
+.footer_container .container .footer_header h1{
+    font-size: 48px;
+    color: greenyellow;
+    margin-bottom: 18px;
+}
+.footer_container .container .footer_header h3{
+    font-size: 36;
+    color: green;
+}
+.footer_container .container .footer_header p{
+    color: white;
+    font-size: 18px;
+}
+.footer_container .container .footer_nav{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.footer_container .container .footer_nav .footer_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+.footer_container .container .footer_nav .footer_menu li a{
+    color: white;
+    font-size: 24px;
+    transition: all .3s ease-in-out;
+
+}
+.footer_container .container .footer_nav .footer_menu li a:hover{
+    color: greenyellow;
+}
